@@ -548,40 +548,425 @@
   </div>
 </section>
 
-
-
-
-<section class="hero is-small is-light">
-  <h2 class="title is-3 has-text-centered">Ablation of augmentation</h2>
-
+<!-- <section class="hero is-small is-light">
+  <center><h2 class="title is-3">Gallery of Generation</h2></center>
   <div class="hero-body">
+
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="has-text-centered">
-          <p style="max-width: 60%; margin: 0 auto 20px auto; font-size: 1.25rem; line-height: 1.4;">
-            <b>A person holds the trash bin in their left hand and empties the trash bin.</b>
+        <div class="column is-centered has-text-centered">
+          <p style="max-width: 30%; margin: 0 auto 15px auto; font-size: 1.5rem; line-height: 1.3;">
+            <b>A person crosses and uncrosses their left leg over their right while seated.</b>
           </p>
+          <video poster="" id="tree" autoplay controls muted loop playsinline style="width: 30%; height: auto;">
+            <source src="./static/videos/gallery/behave_3.mp4" type="video/mp4">
+          </video>
+        </div> -->
 
-          <div class="columns is-centered is-mobile" style="margin-bottom: 0;">
-            <div class="column is-3">
-              <video autoplay controls muted loop playsinline style="width: 100%; height: auto; border-radius: 8px;">
-                <source src="static/videos/ablation_aug/5_teaser_unguide.mp4" type="video/mp4">
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Ablation on the Augmentation</h2>
+
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <!-- 5_teaser -->
+        <div class="carousel-item">
+          <div class="has-text-centered" style="margin-bottom: 20px;">
+            <p style="max-width: 80%; margin: 0 auto; font-size: 1.25rem; line-height: 1.4;">
+              <b>A person holds the trash bin in their left hand and empties the trash bin.</b>
+            </p>
+          </div>
+
+          <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source src="./static/videos/ablation_aug/5_teaser_unguide.mp4" type="video/mp4">
               </video>
-              <p style="margin-top: 8px; font-weight: bold; color: #666;">w/o guidance</p>
+              <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o augmentation</p>
             </div>
 
-            <div class="column is-3">
-              <video autoplay controls muted loop playsinline style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
-                <source src="static/videos/ablation_aug/5_teaser_guide.mp4" type="video/mp4">
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source src="./static/videos/ablation_aug/5_teaser_guide.mp4" type="video/mp4">
               </video>
-              <p style="margin-top: 8px; font-weight: bold; color: #3273dc;">w/ guidance</p>
+              <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ augmentation</p>
             </div>
           </div>
         </div>
+
+        <!-- 10_teaser -->
+        <div class="carousel-item">
+          <div class="has-text-centered" style="margin-bottom: 20px;">
+            <p style="max-width: 80%; margin: 0 auto; font-size: 1.25rem; line-height: 1.4;">
+              <b>10_teaser caption</b>
+            </p>
+          </div>
+
+          <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source src="./static/videos/ablation_aug/10_teaser_unguide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o augmentation</p>
+            </div>
+
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source src="./static/videos/ablation_aug/10_teaser_guide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ augmentation</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14_teaser -->
+        <div class="carousel-item">
+          <div class="has-text-centered" style="margin-bottom: 20px;">
+            <p style="max-width: 80%; margin: 0 auto; font-size: 1.25rem; line-height: 1.4;">
+              <b>14_teaser caption</b>
+            </p>
+          </div>
+
+          <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source src="./static/videos/ablation_aug/14_teaser_unguide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o augmentation</p>
+            </div>
+
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source src="./static/videos/ablation_aug/14_teaser_guide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ augmentation</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 15_teaser -->
+        <div class="carousel-item">
+          <div class="has-text-centered" style="margin-bottom: 20px;">
+            <p style="max-width: 80%; margin: 0 auto; font-size: 1.25rem; line-height: 1.4;">
+              <b>15_teaser caption</b>
+            </p>
+          </div>
+
+          <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source src="./static/videos/ablation_aug/15_teaser_unguide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o augmentation</p>
+            </div>
+
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source src="./static/videos/ablation_aug/15_teaser_guide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ augmentation</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 16_teaser -->
+        <div class="carousel-item">
+          <div class="has-text-centered" style="margin-bottom: 20px;">
+            <p style="max-width: 80%; margin: 0 auto; font-size: 1.25rem; line-height: 1.4;">
+              <b>16_teaser caption</b>
+            </p>
+          </div>
+
+          <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source src="./static/videos/ablation_aug/16_teaser_unguide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o augmentation</p>
+            </div>
+
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source src="./static/videos/ablation_aug/16_teaser_guide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ augmentation</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 24_teaser -->
+        <div class="carousel-item">
+          <div class="has-text-centered" style="margin-bottom: 20px;">
+            <p style="max-width: 80%; margin: 0 auto; font-size: 1.25rem; line-height: 1.4;">
+              <b>24_teaser caption</b>
+            </p>
+          </div>
+
+          <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source src="./static/videos/ablation_aug/24_teaser_unguide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o augmentation</p>
+            </div>
+
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source src="./static/videos/ablation_aug/24_teaser_guide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ augmentation</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 43_teaser -->
+        <div class="carousel-item">
+          <div class="has-text-centered" style="margin-bottom: 20px;">
+            <p style="max-width: 80%; margin: 0 auto; font-size: 1.25rem; line-height: 1.4;">
+              <b>43_teaser caption</b>
+            </p>
+          </div>
+
+          <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source src="./static/videos/ablation_aug/43_teaser_unguide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o augmentation</p>
+            </div>
+
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source src="./static/videos/ablation_aug/43_teaser_guide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ augmentation</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 61_teaser -->
+        <div class="carousel-item">
+          <div class="has-text-centered" style="margin-bottom: 20px;">
+            <p style="max-width: 80%; margin: 0 auto; font-size: 1.25rem; line-height: 1.4;">
+              <b>61_teaser caption</b>
+            </p>
+          </div>
+
+          <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source src="./static/videos/ablation_aug/61_teaser_unguide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o augmentation</p>
+            </div>
+
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source src="./static/videos/ablation_aug/61_teaser_guide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ augmentation</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 93_teaser -->
+        <div class="carousel-item">
+          <div class="has-text-centered" style="margin-bottom: 20px;">
+            <p style="max-width: 80%; margin: 0 auto; font-size: 1.25rem; line-height: 1.4;">
+              <b>93_teaser caption</b>
+            </p>
+          </div>
+
+          <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source src="./static/videos/ablation_aug/93_teaser_unguide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o augmentation</p>
+            </div>
+
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source src="./static/videos/ablation_aug/93_teaser_guide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ augmentation</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 126_teaser -->
+        <div class="carousel-item">
+          <div class="has-text-centered" style="margin-bottom: 20px;">
+            <p style="max-width: 80%; margin: 0 auto; font-size: 1.25rem; line-height: 1.4;">
+              <b>126_teaser caption</b>
+            </p>
+          </div>
+
+          <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source src="./static/videos/ablation_aug/126_teaser_unguide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o augmentation</p>
+            </div>
+
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source src="./static/videos/ablation_aug/126_teaser_guide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ augmentation</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 </section>
+
+
+
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Ablation on the Augmentation</h2>
+
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <!-- 5_teaser -->
+        <div class="carousel-item">
+          <div class="has-text-centered" style="margin-bottom: 20px;">
+            <p style="max-width: 80%; margin: 0 auto; font-size: 1.25rem; line-height: 1.4;">
+              <b>Kick the largetable, and set it back down.</b>
+            </p>
+          </div>
+
+          <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source src="./static/videos/ablation_guide/14_teaser_unguide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o guidance</p>
+            </div>
+
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source src="./static/videos/ablation_guide/14_teaser_guide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ guidance</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10_teaser -->
+        <div class="carousel-item">
+          <div class="has-text-centered" style="margin-bottom: 20px;">
+            <p style="max-width: 80%; margin: 0 auto; font-size: 1.25rem; line-height: 1.4;">
+              <b>The person puts the right leg on the left leg, and then stands up from the chair and clips the hands in the air.</b>
+            </p>
+          </div>
+
+          <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source src="./static/videos/ablation_guide/25_teaser_unguide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o guidance</p>
+            </div>
+
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source src="./static/videos/ablation_guide/25_teaser_guide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ guidance</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14_teaser -->
+        <!-- <div class="carousel-item">
+          <div class="has-text-centered" style="margin-bottom: 20px;">
+            <p style="max-width: 80%; margin: 0 auto; font-size: 1.25rem; line-height: 1.4;">
+              <b>14_teaser caption</b>
+            </p>
+          </div>
+
+          <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source src="./static/videos/ablation_guide/31_teaser_unguide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o guidance</p>
+            </div>
+
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source src="./static/videos/ablation_guide/31_teaser_guide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ guidance</p>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- 15_teaser -->
+        <div class="carousel-item">
+          <div class="has-text-centered" style="margin-bottom: 20px;">
+            <p style="max-width: 80%; margin: 0 auto; font-size: 1.25rem; line-height: 1.4;">
+              <b>Hold the whitechair and turn it around to face a diffferent orientation.</b>
+            </p>
+          </div>
+
+          <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source src="./static/videos/ablation_guide/36_teaser_unguide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o guidance</p>
+            </div>
+
+            <div class="column is-4">
+              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source src="./static/videos/ablation_guide/36_teaser_guide.mp4" type="video/mp4">
+              </video>
+              <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ guidance</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 16_teaser -->
+       
+
+        <!-- 126_teaser -->
+     
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const carousel = document.querySelector("#results-carousel");
+    if (!carousel) return;
+
+    const items = carousel.querySelectorAll(".carousel-item");
+    if (items.length < 2) return;
+
+    bulmaCarousel.attach("#results-carousel", {
+      slidesToScroll: 1,
+      slidesToShow: 1,
+      loop: true,
+      infinite: true,
+      autoplay: false,
+      pagination: true,
+      navigation: true
+    });
+  });
+</script>
+
 
 <!-- <section class="hero is-small is-light">
   <div class="has-text-centered" style="margin-top: 2rem;">
