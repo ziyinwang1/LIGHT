@@ -98,8 +98,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
   
-  <!-- Fonts - Optimized loading -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Fonts - HandX-like typography -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   
   <!-- Defer non-critical JavaScript -->
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -349,9 +349,9 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="none">
         <!-- TODO: Add your video file path here -->
-        <source src="static/videos/teaser_video_v1.mp4" type="video/mp4">
+        <source data-src="static/videos/teaser_video_v1.mp4" type="video/mp4">
       </video>
       <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
@@ -383,7 +383,7 @@
   <div class="hero-body">
     <div class="container" style="text-align: center;">
       <h2 class="title is-3" style="text-align: center;">Approach Overview</h2>
-      <img src="static/images/method.png" alt="Method Overview" style="width: 75%; height: auto;">
+      <img loading="lazy" decoding="async" src="static/images/method.png" alt="Method Overview" style="width: 75%; height: auto;">
       <p>
       Overview of <strong>LIGHT</strong>. <strong>Left</strong>: Training. We form different modalities, e.g., body, hand, and object,
 each diffused with its own noise level. After adding modal-wise and frame-wise rotary positional encodings,
@@ -415,7 +415,7 @@ that keeps one modality cleaner from the uniform run.
       <h2 class="title">Approach Overview</h2>
 
       TODO: Replace with your poster PDF
-      <iframe  src="static/pdfs/method_light.pdf" width="100%" height="550">
+      <iframe loading="lazy"  src="static/pdfs/method_light.pdf" width="100%" height="550">
           </iframe>
         
       </div>
@@ -440,7 +440,7 @@ that keeps one modality cleaner from the uniform run.
           
           <div class="publication-video">
             TODO: Replace with your YouTube video ID -->
-            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <!-- <iframe loading="lazy" src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -463,8 +463,8 @@ that keeps one modality cleaner from the uniform run.
               <p class="gallery-caption">
                 <b>A person crosses and uncrosses their left leg over their right while seated.</b>
               </p>
-              <video autoplay controls muted loop playsinline class="gallery-video">
-                <source src="./static/videos/gallery/behave_3.mp4" type="video/mp4">
+              <video preload="none" autoplay controls muted loop playsinline class="gallery-video">
+                <source data-src="./static/videos/gallery/behave_3.mp4" type="video/mp4">
               </video>
             </div>
 
@@ -472,8 +472,8 @@ that keeps one modality cleaner from the uniform run.
               <p class="gallery-caption">
                 <b>A person turns their body clockwise, crosses their right leg to a different side of a square table from their left leg, sticks both hands to the edge of the square school table behind their body, and tilts back.</b>
               </p>
-              <video autoplay controls muted loop playsinline class="gallery-video">
-                <source src="./static/videos/gallery/behave_25.mp4" type="video/mp4">
+              <video preload="none" autoplay controls muted loop playsinline class="gallery-video">
+                <source data-src="./static/videos/gallery/behave_25.mp4" type="video/mp4">
               </video>
             </div>
           </div>
@@ -486,8 +486,8 @@ that keeps one modality cleaner from the uniform run.
               <p class="gallery-caption">
                 <b>An individual reclines on a yoga ball, extends both legs, and then rises to a standing position.</b>
               </p>
-              <video autoplay controls muted loop playsinline class="gallery-video">
-                <source src="./static/videos/gallery/behave_48.mp4" type="video/mp4">
+              <video preload="none" autoplay controls muted loop playsinline class="gallery-video">
+                <source data-src="./static/videos/gallery/behave_48.mp4" type="video/mp4">
               </video>
             </div>
 
@@ -495,8 +495,8 @@ that keeps one modality cleaner from the uniform run.
               <p class="gallery-caption">
                 <b>A person takes a backpack off their left shoulder, puts it on their right shoulder, and walks counterclockwise for a circle.</b>
               </p>
-              <video autoplay controls muted loop playsinline class="gallery-video">
-                <source src="./static/videos/gallery/behave_54.mp4" type="video/mp4">
+              <video preload="none" autoplay controls muted loop playsinline class="gallery-video">
+                <source data-src="./static/videos/gallery/behave_54.mp4" type="video/mp4">
               </video>
             </div>
           </div>
@@ -509,8 +509,8 @@ that keeps one modality cleaner from the uniform run.
               <p class="gallery-caption">
                 <b>A person walks forward, grabs and inspects a large torus, then replaces it and returns to their starting point.</b>
               </p>
-              <video autoplay controls muted loop playsinline class="gallery-video">
-                <source src="./static/videos/gallery/grab_6.mp4" type="video/mp4">
+              <video preload="none" autoplay controls muted loop playsinline class="gallery-video">
+                <source data-src="./static/videos/gallery/grab_6.mp4" type="video/mp4">
               </video>
             </div>
 
@@ -518,8 +518,8 @@ that keeps one modality cleaner from the uniform run.
               <p class="gallery-caption">
                 <b>A person walks towards a toothpaste, grasps the toothpaste with their right hand, passes it towards their front, and puts it back on the desk with their right hand.</b>
               </p>
-              <video autoplay controls muted loop playsinline class="gallery-video">
-                <source src="./static/videos/gallery/grab_7.mp4" type="video/mp4">
+              <video preload="none" autoplay controls muted loop playsinline class="gallery-video">
+                <source data-src="./static/videos/gallery/grab_7.mp4" type="video/mp4">
               </video>
             </div>
           </div>
@@ -532,8 +532,8 @@ that keeps one modality cleaner from the uniform run.
               <p class="gallery-caption">
                 <b>A person cooks with a pan, switches hands, and adds seasonings.</b>
               </p>
-              <video autoplay controls muted loop playsinline class="gallery-video">
-                <source src="./static/videos/gallery/imhd_9.mp4" type="video/mp4">
+              <video preload="none" autoplay controls muted loop playsinline class="gallery-video">
+                <source data-src="./static/videos/gallery/imhd_9.mp4" type="video/mp4">
               </video>
             </div>
 
@@ -541,8 +541,8 @@ that keeps one modality cleaner from the uniform run.
               <p class="gallery-caption">
                 <b>A person swings a baseball between their hands while walking clockwise, then rubs it in their hands while walking counterclockwise.</b>
               </p>
-              <video autoplay controls muted loop playsinline class="gallery-video">
-                <source src="./static/videos/gallery/imhd_16.mp4" type="video/mp4">
+              <video preload="none" autoplay controls muted loop playsinline class="gallery-video">
+                <source data-src="./static/videos/gallery/imhd_16.mp4" type="video/mp4">
               </video>
             </div>
           </div>
@@ -555,8 +555,8 @@ that keeps one modality cleaner from the uniform run.
               <p class="gallery-caption">
                 <b>An individual grasps a dumbbell with their left hand while extending both legs forward and backward, while rotating their torso to the right.</b>
               </p>
-              <video autoplay controls muted loop playsinline class="gallery-video">
-                <source src="./static/videos/gallery/imhd_49.mp4" type="video/mp4">
+              <video preload="none" autoplay controls muted loop playsinline class="gallery-video">
+                <source data-src="./static/videos/gallery/imhd_49.mp4" type="video/mp4">
               </video>
             </div>
 
@@ -564,8 +564,8 @@ that keeps one modality cleaner from the uniform run.
               <p class="gallery-caption">
                 <b>An individual moves backward, tosses a pillow upward with both hands and catches it twice, then holds it aloft.</b>
               </p>
-              <video autoplay controls muted loop playsinline class="gallery-video">
-                <source src="./static/videos/gallery/neuraldome_13.mp4" type="video/mp4">
+              <video preload="none" autoplay controls muted loop playsinline class="gallery-video">
+                <source data-src="./static/videos/gallery/neuraldome_13.mp4" type="video/mp4">
               </video>
             </div>
           </div>
@@ -578,8 +578,8 @@ that keeps one modality cleaner from the uniform run.
               <p class="gallery-caption">
                 <b>Push the large table, and set it back down.</b>
               </p>
-              <video autoplay controls muted loop playsinline class="gallery-video">
-                <source src="./static/videos/gallery/omomo_1.mp4" type="video/mp4">
+              <video preload="none" autoplay controls muted loop playsinline class="gallery-video">
+                <source data-src="./static/videos/gallery/omomo_1.mp4" type="video/mp4">
               </video>
             </div>
 
@@ -587,8 +587,8 @@ that keeps one modality cleaner from the uniform run.
               <p class="gallery-caption">
                 <b>Lift the monitor, move the monitor, and put down the monitor.</b>
               </p>
-              <video autoplay controls muted loop playsinline class="gallery-video">
-                <source src="./static/videos/gallery/omomo_57.mp4" type="video/mp4">
+              <video preload="none" autoplay controls muted loop playsinline class="gallery-video">
+                <source data-src="./static/videos/gallery/omomo_57.mp4" type="video/mp4">
               </video>
             </div>
 
@@ -596,8 +596,8 @@ that keeps one modality cleaner from the uniform run.
               <p class="gallery-caption">
                 <b>Lift the plastic box, rotate the plastic box, and set it back down.</b>
               </p>
-              <video autoplay controls muted loop playsinline class="gallery-video">
-                <source src="./static/videos/gallery/omomo_45.mp4" type="video/mp4">
+              <video preload="none" autoplay controls muted loop playsinline class="gallery-video">
+                <source data-src="./static/videos/gallery/omomo_45.mp4" type="video/mp4">
               </video>
             </div> -->
           </div>
@@ -610,8 +610,8 @@ that keeps one modality cleaner from the uniform run.
               <p class="gallery-caption">
                 <b>Lift the white chair, flip it upside down, and place it on top of the table.</b>
               </p>
-              <video autoplay controls muted loop playsinline class="gallery-video">
-                <source src="./static/videos/gallery/omomo_54.mp4" type="video/mp4">
+              <video preload="none" autoplay controls muted loop playsinline class="gallery-video">
+                <source data-src="./static/videos/gallery/omomo_54.mp4" type="video/mp4">
               </video>
             </div>
 
@@ -619,8 +619,8 @@ that keeps one modality cleaner from the uniform run.
               <p class="gallery-caption">
                 <b>Lift the small table above your head, walk, and put the small table down.</b>
               </p>
-              <video autoplay controls muted loop playsinline class="gallery-video">
-                <source src="./static/videos/gallery/omomo_55.mp4" type="video/mp4">
+              <video preload="none" autoplay controls muted loop playsinline class="gallery-video">
+                <source data-src="./static/videos/gallery/omomo_55.mp4" type="video/mp4">
               </video>
             </div>
           </div>
@@ -633,8 +633,8 @@ that keeps one modality cleaner from the uniform run.
               <p class="gallery-caption">
                 <b>Lift the monitor, move the monitor, and put down the monitor.</b>
               </p>
-              <video autoplay controls muted loop playsinline class="gallery-video">
-                <source src="./static/videos/gallery/omomo_57.mp4" type="video/mp4">
+              <video preload="none" autoplay controls muted loop playsinline class="gallery-video">
+                <source data-src="./static/videos/gallery/omomo_57.mp4" type="video/mp4">
               </video>
             </div>
           </div>
@@ -718,27 +718,6 @@ that keeps one modality cleaner from the uniform run.
 }
 </style>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const carousel = document.querySelector("#results-carousel");
-    if (!carousel) return;
-
-    const items = carousel.querySelectorAll(".carousel-item");
-    if (items.length < 2) return;
-
-    bulmaCarousel.attach("#results-carousel", {
-      slidesToScroll: 1,
-      slidesToShow: 1,
-      loop: true,
-      infinite: true,
-      autoplay: false,
-      pagination: true,
-      navigation: true
-    });
-  });
-</script>
-
-
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
@@ -756,15 +735,15 @@ that keeps one modality cleaner from the uniform run.
 
           <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
-                <source src="./static/videos/ablation_aug/5_teaser_unguide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source data-src="./static/videos/ablation_aug/5_teaser_unguide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o augmentation</p>
             </div>
 
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
-                <source src="./static/videos/ablation_aug/5_teaser_guide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source data-src="./static/videos/ablation_aug/5_teaser_guide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ augmentation</p>
             </div>
@@ -781,15 +760,15 @@ that keeps one modality cleaner from the uniform run.
 
           <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
-                <source src="./static/videos/ablation_aug/10_teaser_unguide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source data-src="./static/videos/ablation_aug/10_teaser_unguide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o augmentation</p>
             </div>
 
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
-                <source src="./static/videos/ablation_aug/10_teaser_guide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source data-src="./static/videos/ablation_aug/10_teaser_guide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ augmentation</p>
             </div>
@@ -806,15 +785,15 @@ that keeps one modality cleaner from the uniform run.
 
           <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
-                <source src="./static/videos/ablation_aug/14_teaser_unguide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source data-src="./static/videos/ablation_aug/14_teaser_unguide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o augmentation</p>
             </div>
 
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
-                <source src="./static/videos/ablation_aug/14_teaser_guide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source data-src="./static/videos/ablation_aug/14_teaser_guide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ augmentation</p>
             </div>
@@ -831,15 +810,15 @@ that keeps one modality cleaner from the uniform run.
 
           <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
-                <source src="./static/videos/ablation_aug/15_teaser_unguide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source data-src="./static/videos/ablation_aug/15_teaser_unguide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o augmentation</p>
             </div>
 
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
-                <source src="./static/videos/ablation_aug/15_teaser_guide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source data-src="./static/videos/ablation_aug/15_teaser_guide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ augmentation</p>
             </div>
@@ -856,15 +835,15 @@ that keeps one modality cleaner from the uniform run.
 
           <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
-                <source src="./static/videos/ablation_aug/16_teaser_unguide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source data-src="./static/videos/ablation_aug/16_teaser_unguide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o augmentation</p>
             </div>
 
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
-                <source src="./static/videos/ablation_aug/16_teaser_guide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source data-src="./static/videos/ablation_aug/16_teaser_guide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ augmentation</p>
             </div>
@@ -881,15 +860,15 @@ that keeps one modality cleaner from the uniform run.
 
           <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
-                <source src="./static/videos/ablation_aug/24_teaser_unguide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source data-src="./static/videos/ablation_aug/24_teaser_unguide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o augmentation</p>
             </div>
 
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
-                <source src="./static/videos/ablation_aug/24_teaser_guide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source data-src="./static/videos/ablation_aug/24_teaser_guide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ augmentation</p>
             </div>
@@ -906,15 +885,15 @@ that keeps one modality cleaner from the uniform run.
 
           <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
-                <source src="./static/videos/ablation_aug/43_teaser_unguide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source data-src="./static/videos/ablation_aug/43_teaser_unguide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o augmentation</p>
             </div>
 
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
-                <source src="./static/videos/ablation_aug/43_teaser_guide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source data-src="./static/videos/ablation_aug/43_teaser_guide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ augmentation</p>
             </div>
@@ -931,15 +910,15 @@ that keeps one modality cleaner from the uniform run.
 
           <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
-                <source src="./static/videos/ablation_aug/61_teaser_unguide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source data-src="./static/videos/ablation_aug/61_teaser_unguide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o augmentation</p>
             </div>
 
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
-                <source src="./static/videos/ablation_aug/61_teaser_guide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source data-src="./static/videos/ablation_aug/61_teaser_guide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ augmentation</p>
             </div>
@@ -956,15 +935,15 @@ that keeps one modality cleaner from the uniform run.
 
           <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
-                <source src="./static/videos/ablation_aug/93_teaser_unguide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source data-src="./static/videos/ablation_aug/93_teaser_unguide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o augmentation</p>
             </div>
 
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
-                <source src="./static/videos/ablation_aug/93_teaser_guide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source data-src="./static/videos/ablation_aug/93_teaser_guide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ augmentation</p>
             </div>
@@ -981,15 +960,15 @@ that keeps one modality cleaner from the uniform run.
 
           <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
-                <source src="./static/videos/ablation_aug/126_teaser_unguide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source data-src="./static/videos/ablation_aug/126_teaser_unguide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o augmentation</p>
             </div>
 
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
-                <source src="./static/videos/ablation_aug/126_teaser_guide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source data-src="./static/videos/ablation_aug/126_teaser_guide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ augmentation</p>
             </div>
@@ -1020,15 +999,15 @@ that keeps one modality cleaner from the uniform run.
 
           <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
-                <source src="./static/videos/ablation_guide/25_teaser_unguide_2.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source data-src="./static/videos/ablation_guide/25_teaser_unguide_2.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o guidance</p>
             </div>
 
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
-                <source src="./static/videos/ablation_guide/25_teaser_guide_2.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source data-src="./static/videos/ablation_guide/25_teaser_guide_2.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ guidance</p>
             </div>
@@ -1044,15 +1023,15 @@ that keeps one modality cleaner from the uniform run.
 
           <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
-                <source src="./static/videos/ablation_guide/36_teaser_unguide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source data-src="./static/videos/ablation_guide/36_teaser_unguide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o guidance</p>
             </div>
 
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
-                <source src="./static/videos/ablation_guide/36_teaser_guide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source data-src="./static/videos/ablation_guide/36_teaser_guide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ guidance</p>
             </div>
@@ -1068,15 +1047,15 @@ that keeps one modality cleaner from the uniform run.
 
           <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
-                <source src="./static/videos/ablation_guide/19_teaser_unguide_2.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source data-src="./static/videos/ablation_guide/19_teaser_unguide_2.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o guidance</p>
             </div>
 
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
-                <source src="./static/videos/ablation_guide/19_teaser_guide_2.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source data-src="./static/videos/ablation_guide/19_teaser_guide_2.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ guidance</p>
             </div>
@@ -1093,15 +1072,15 @@ that keeps one modality cleaner from the uniform run.
 
           <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
-                <source src="./static/videos/ablation_guide/14_teaser_unguide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source data-src="./static/videos/ablation_guide/14_teaser_unguide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o guidance</p>
             </div>
 
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
-                <source src="./static/videos/ablation_guide/14_teaser_guide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source data-src="./static/videos/ablation_guide/14_teaser_guide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ guidance</p>
             </div>
@@ -1118,15 +1097,15 @@ that keeps one modality cleaner from the uniform run.
 
           <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
-                <source src="./static/videos/ablation_guide/25_teaser_unguide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source data-src="./static/videos/ablation_guide/25_teaser_unguide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o guidance</p>
             </div>
 
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
-                <source src="./static/videos/ablation_guide/25_teaser_guide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source data-src="./static/videos/ablation_guide/25_teaser_guide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ guidance</p>
             </div>
@@ -1143,15 +1122,15 @@ that keeps one modality cleaner from the uniform run.
 
           <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
-                <source src="./static/videos/ablation_guide/31_teaser_unguide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source data-src="./static/videos/ablation_guide/31_teaser_unguide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o guidance</p>
             </div>
 
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
-                <source src="./static/videos/ablation_guide/31_teaser_guide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source data-src="./static/videos/ablation_guide/31_teaser_guide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ guidance</p>
             </div>
@@ -1168,15 +1147,15 @@ that keeps one modality cleaner from the uniform run.
 
           <div class="columns is-centered has-text-centered is-vcentered" style="margin-bottom: 20px;">
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
-                <source src="./static/videos/ablation_guide/36_teaser_unguide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                <source data-src="./static/videos/ablation_guide/36_teaser_unguide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #666;">w/o guidance</p>
             </div>
 
             <div class="column is-4">
-              <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
-                <source src="./static/videos/ablation_guide/36_teaser_guide.mp4" type="video/mp4">
+              <video preload="none" autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px; border: 2px solid #3273dc;">
+                <source data-src="./static/videos/ablation_guide/36_teaser_guide.mp4" type="video/mp4">
               </video>
               <p style="margin-top: 10px; font-weight: 700; color: #3273dc;">w/ guidance</p>
             </div>
@@ -1193,27 +1172,6 @@ that keeps one modality cleaner from the uniform run.
     </div>
   </div>
 </section>
-
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const carousel = document.querySelector("#results-carousel");
-    if (!carousel) return;
-
-    const items = carousel.querySelectorAll(".carousel-item");
-    if (items.length < 2) return;
-
-    bulmaCarousel.attach("#results-carousel", {
-      slidesToScroll: 1,
-      slidesToShow: 1,
-      loop: true,
-      infinite: true,
-      autoplay: false,
-      pagination: true,
-      navigation: true
-    });
-  });
-</script>
 
 
 <!-- <section class="hero is-small is-light">
@@ -1233,15 +1191,15 @@ that keeps one modality cleaner from the uniform run.
 
             <div class="columns is-centered is-mobile">
               <div class="column is-5-tablet is-6-mobile">
-                <video autoplay controls muted loop playsinline style="width: 100%; border-radius: 8px;">
-                  <source src="./static/videos/ablation_aug/5_teaser_unguide.mp4" type="video/mp4">
+                <video preload="none" autoplay controls muted loop playsinline style="width: 100%; border-radius: 8px;">
+                  <source data-src="./static/videos/ablation_aug/5_teaser_unguide.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-weight: bold; color: #666;">w/o guidance</p>
               </div>
 
               <div class="column is-5-tablet is-6-mobile">
-                <video autoplay controls muted loop playsinline style="width: 100%; border-radius: 8px; border: 2px solid #3273dc;">
-                  <source src="./static/videos/ablation_aug/5_teaser_guide.mp4" type="video/mp4">
+                <video preload="none" autoplay controls muted loop playsinline style="width: 100%; border-radius: 8px; border: 2px solid #3273dc;">
+                  <source data-src="./static/videos/ablation_aug/5_teaser_guide.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-weight: bold; color: #3273dc;">w/ guidance</p>
               </div>
@@ -1262,21 +1220,21 @@ that keeps one modality cleaner from the uniform run.
           TODO: Add poster image for better preview -->
           <!-- <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
             Your video file here
-            <source src="static/videos/guide_ablation1.mp4" type="video/mp4">
+            <source data-src="static/videos/guide_ablation1.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video2"> -->
           <!-- TODO: Add poster image for better preview
           <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
             Your video file here
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
+            <source data-src="static/videos/carousel2.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           TODO: Add poster image for better preview
           <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
             Your video file here
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
+            <source data-src="static/videos/carousel3.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -1297,7 +1255,7 @@ that keeps one modality cleaner from the uniform run.
       <h2 class="title">Poster</h2>
 
       TODO: Replace with your poster PDF
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+      <iframe loading="lazy"  src="static/pdfs/sample.pdf" width="100%" height="550">
           </iframe>
         
       </div>
@@ -1335,7 +1293,7 @@ that keeps one modality cleaner from the uniform run.
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the聽<a href="https://nerfies.github.io" target="_blank">Nerfies</a>聽project page.
             You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
@@ -1352,5 +1310,81 @@ that keeps one modality cleaner from the uniform run.
 
     <!-- End of Statcounter Code -->
 
-  </body>
-  </html>
+  
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const loadMediaElement = (el) => {
+      if (!el || el.dataset.loaded === "true") return;
+
+      if (el.tagName === "VIDEO") {
+        const sources = el.querySelectorAll("source[data-src]");
+        sources.forEach((source) => {
+          source.src = source.dataset.src;
+          source.removeAttribute("data-src");
+        });
+        el.load();
+      } else if (el.tagName === "IFRAME") {
+        if (el.dataset.src) {
+          el.src = el.dataset.src;
+          el.removeAttribute("data-src");
+        }
+      } else if (el.tagName === "OBJECT") {
+        if (el.dataset.src) {
+          el.data = el.dataset.src;
+          el.removeAttribute("data-src");
+        }
+      } else if (el.tagName === "IMG") {
+        if (el.dataset.src) {
+          el.src = el.dataset.src;
+          el.removeAttribute("data-src");
+        }
+      }
+
+      el.dataset.loaded = "true";
+    };
+
+    const lazyElements = document.querySelectorAll(
+      "video.lazy-video, iframe.lazy-iframe, object.lazy-object, img.lazy-img[data-src]"
+    );
+
+    if ("IntersectionObserver" in window) {
+      const mediaObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            loadMediaElement(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        rootMargin: "300px 0px",
+        threshold: 0.01
+      });
+
+      lazyElements.forEach((el) => mediaObserver.observe(el));
+    } else {
+      lazyElements.forEach(loadMediaElement);
+    }
+
+    const carousels = document.querySelectorAll(".results-carousel");
+    if (typeof bulmaCarousel !== "undefined" && carousels.length > 0) {
+      carousels.forEach((carousel) => {
+        const items = carousel.querySelectorAll(".carousel-item, .item");
+        if (items.length < 1) return;
+
+        bulmaCarousel.attach(carousel, {
+          slidesToScroll: 1,
+          slidesToShow: 1,
+          loop: items.length > 1,
+          infinite: items.length > 1,
+          autoplay: false,
+          pagination: items.length > 1,
+          navigation: items.length > 1
+        });
+      });
+    }
+  });
+</script>
+
+</body>
+  
+</html>

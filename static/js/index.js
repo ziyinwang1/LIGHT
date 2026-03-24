@@ -1,5 +1,50 @@
 window.HELP_IMPROVE_VIDEOJS = false;
 
+function hydrateVideoSources(video) {
+    if (!video || video.dataset.loaded === 'true') return;
+
+    const lazySources = video.querySelectorAll('source[data-src]');
+    if (!lazySources.length) {
+        video.dataset.loaded = 'true';
+        return;
+    }
+
+    lazySources.forEach(source => {
+        source.setAttribute('src', source.getAttribute('data-src'));
+    });
+    video.load();
+    video.dataset.loaded = 'true';
+}
+
+function setupLazyVideoLoading() {
+    const videos = document.querySelectorAll('video');
+    if (!videos.length) return;
+
+    // First viewport video should be loaded immediately for fast first render.
+    const firstVideo = videos[0];
+    hydrateVideoSources(firstVideo);
+
+    if (!('IntersectionObserver' in window)) {
+        videos.forEach(hydrateVideoSources);
+        return;
+    }
+
+    const lazyObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            hydrateVideoSources(entry.target);
+            observer.unobserve(entry.target);
+        });
+    }, {
+        rootMargin: '300px 0px',
+        threshold: 0.01
+    });
+
+    videos.forEach(video => {
+        if (video !== firstVideo) lazyObserver.observe(video);
+    });
+}
+
 // More Works Dropdown Functionality
 function toggleMoreWorks() {
     const dropdown = document.getElementById('moreWorksDropdown');
@@ -100,6 +145,7 @@ function setupVideoCarouselAutoplay() {
         entries.forEach(entry => {
             const video = entry.target;
             if (entry.isIntersecting) {
+                hydrateVideoSources(video);
                 // Video is in view, play it
                 video.play().catch(e => {
                     // Autoplay failed, probably due to browser policy
@@ -135,6 +181,7 @@ $(document).ready(function() {
     var carousels = bulmaCarousel.attach('.carousel', options);
 	
     bulmaSlider.attach();
+    setupLazyVideoLoading();
     
     // Setup video autoplay for carousel
     setupVideoCarouselAutoplay();
