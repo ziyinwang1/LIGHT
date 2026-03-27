@@ -1131,4 +1131,34 @@ body {
     line-height: 1.6;
     margin-top: 0.7rem;
   }
+
+  /* Mobile video responsiveness for all sections */
+  .hero.teaser .column.is-four-fifths,
+  .ablation-carousel .columns .column,
+  .gallery-card,
+  .section .column.is-four-fifths,
+  .title.is-3,
+  .publication-title {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  .hero.teaser video,
+  .gallery-video,
+  .ablation-carousel video,
+  .carousel-item video {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .tldr-callout {
+    padding: 0.72rem 0.95rem !important;
+    margin: 0.85rem auto 1rem !important;
+  }
+
+  .gallery-caption {
+    text-align: center;
+  }
 }
